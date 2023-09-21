@@ -35,9 +35,9 @@ As the result:
 https://github.com/osquery/osquery-go/blob/master/client.go#L16
 2. Query #1 times out in 10 secs, which is also kind of expected since the client was initialized with 10s timeout.
 3. Here where it gets interesting. The query #3, that should return right away
-    a. First attempt sails with ```query: out of order sequence response```
+    a. First attempt fails with ```query: out of order sequence response```
     b. Second attempt fails with ```i/o timeout``` after 10s timeout
-    c. And then on third attempt is succeeds
+    c. And then on the third attempt is succeeds
 
 
 Here is the output:
