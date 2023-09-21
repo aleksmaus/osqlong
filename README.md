@@ -56,4 +56,4 @@ Here is the output:
 ```
 
 
-For now it seems like due this particular issues we would have to capture and possibly retry the queries that timeout.
+For now it seems like due to this particular issues we would have to capture and possibly retry the queries that timeout or get ```out of order sequence response``` error if the previous query timed out after the allowed timeout set for the client.
